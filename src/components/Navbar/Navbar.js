@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { MenuItems } from './MenuItems'
-// import { AiOutlineInstagram } from 'react-icons/ai';
+import {Link} from 'react-router-dom'
 import './Navbar.css';
 
 
@@ -26,11 +26,11 @@ class Navbar extends Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className=
+                                <Link className=
                                 {item.cName} 
-                                href={item.url}>
+                                to={item.url}>
                                 {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}                 

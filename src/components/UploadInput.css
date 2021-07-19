@@ -1,0 +1,10 @@
+.uploadForm {
+    text-align: center;
+    padding-top: 150px;
+    font-size: large;
+}
+
+.submit {
+    padding-left: 10px;
+    padding-right: 10px;
+}
