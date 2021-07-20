@@ -8,3 +8,11 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.inputLabel {
+    padding-right: 5px;
+}
+
+.url_input {
+    margin: 5px
+}
