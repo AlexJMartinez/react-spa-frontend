@@ -5,10 +5,11 @@ import { connect } from 'react-redux'
 
 
 const Top = ({uploads}) => {
+    
     return(
         <div className="top">
             <h1>Top 10 Images</h1>
-
+           
             
 
         </div>
