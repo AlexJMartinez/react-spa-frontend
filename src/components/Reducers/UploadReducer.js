@@ -8,7 +8,7 @@ export default function UploadReducer(
         case 'FETCH_UPLOADS': 
                 return {
                     ...state,
-                    uploads: [...state.uploads, ...action.payload]
+                    uploads: [...action.payload]
                 }
         case 'ADD_IMAGE': 
                 return {

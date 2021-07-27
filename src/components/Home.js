@@ -6,7 +6,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div className="home">
-            <h1>Welcome to Image Keeper!</h1>
+            <h1>Welcome to Imager!</h1>
         </div>
     )
 }
