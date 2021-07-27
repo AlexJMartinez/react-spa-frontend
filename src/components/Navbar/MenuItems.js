@@ -21,7 +21,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Top',
+        title: 'Recent',
         url: "/top",
         cName: 'nav-links'
     }          

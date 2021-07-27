@@ -24,8 +24,8 @@ const ImageSlider = ({slides}) => {
 
     return (
         <section className="slider">
-            <FaArrowAltCircleLeft className="left-arrow" onClick={nextSlide} />
-            <FaArrowAltCircleRight className="right-arrow" onClick={prevSlide} />
+            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             {slides.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
