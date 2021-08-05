@@ -23,22 +23,30 @@ const ImageSlider = ({slides}) => {
         return null;
     }
 
+    
+
     return (
         <section className="slider">
             <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             {slides.map((slide, index) => {
+
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
                         {index === current && (
                             <img src={slide.img_url} alt="" className="image" />
                         )}
-                        
-                    </div>
-                    
+                    </div>                 
                 )
+                
             })}
+            {/* <div className="likes"> 
+                <FaRegThumbsDown className="thumbs-down" style={style}/>  <FaRegThumbsUp className="thumbs-up"/>
+            </div> */}
         </section>
+        
+        
+        
     )
 }
 

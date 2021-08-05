@@ -16,10 +16,15 @@
   border-radius: 10px;
 }
 
+.image:hover {
+  width: 400px;
+  height: 400px;
+}
+
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 150px;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -30,7 +35,7 @@
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 150px;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -47,4 +52,10 @@
     opacity: 1;
     transition-duration:  1s;
     transform: scale(1.08);
+}
+
+
+.likes {
+  position: absolute;
+  bottom: 15%;
 }
