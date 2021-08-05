@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import ImageSlider  from './ImageSlider';
 import { fetchUploads } from '../Actions/fetchUploads'
 import './UploadsContainer.css';
-
 class UploadsContainer extends Component {
  
     componentDidMount() {
@@ -15,8 +14,7 @@ class UploadsContainer extends Component {
         return (
             <div>
                 <ImageSlider slides={this.props.uploads}/>
-            </div>
-           
+            </div> 
         )
     }
 }
