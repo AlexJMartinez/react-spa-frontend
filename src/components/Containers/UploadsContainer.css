@@ -14,6 +14,7 @@
   width: 250px;
   height: 250px;
   border-radius: 10px;
+  transition: 0.5s;
 }
 
 .image:hover {
@@ -59,3 +60,7 @@
   position: absolute;
   bottom: 15%;
 }
+
+/* .photo-index {
+  font-size: 50px;
+} */

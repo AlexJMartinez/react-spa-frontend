@@ -11,3 +11,14 @@ img:hover {
 
 
 
+.recent-images {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.img-grid {
+    margin: auto;
+}
+

@@ -8,12 +8,12 @@ const Top = ({uploads}) => {
     const images = uploads.slice(Math.max(uploads.length - 10, 0))
    
     return(
-        <div className="top">
+        <div>
             <div>     
                 <div>
                     <ImageSlider slides={images}/>
-                    {/* <table className="grid">
-                        {images.map((image, index) => {
+                    <table className="img-grid">
+                        {/* {images.map((image, index) => {
                             return (
                                 <td>
                                     <tr key={index}><a target="_blank" href={image.img_url} rel="noreferrer">
@@ -21,7 +21,7 @@ const Top = ({uploads}) => {
                                                 </a></tr>
                                 </td>
                                 
-                            )})}
+                            )})} */}
                             
                             <td>
                                 <tr><a target="_blank" href={images[0].img_url} rel="noreferrer">
@@ -53,7 +53,8 @@ const Top = ({uploads}) => {
                                 <tr><a target="_blank" href={images[9].img_url} rel="noreferrer">
                                     <img className="recent-images" src={images[9].img_url} alt="" /></a></tr>   
                             </td>
-                    </table> */}
+                    </table>
+                    
                 </div>
             </div>
         </div>

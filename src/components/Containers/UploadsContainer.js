@@ -28,7 +28,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         addImage: (image) => dispatch({type: 'ADD_IMAGE', payload: image})
-        , fetchUploads : () => dispatch(fetchUploads()) 
+        , fetchUploads: () => dispatch(fetchUploads()) 
     }
 }
 

@@ -1,14 +1,10 @@
 import React, { Component } from 'react' 
 import './UploadInput.css'
 
-
-
-
 class UploadInput extends Component {
     state = {
         img_url: ''
     }
-
 
     handleSubmit = event => {
         event.preventDefault()
@@ -47,7 +43,7 @@ class UploadInput extends Component {
                     <label className="inputLabel">Add Image:</label>
                     <input onChange={(event) => this.handleChange(event)} 
                            size="50" 
-                           type="text" 
+                           type="url" 
                            name="image_url" 
                            value={this.state.img_url}
                            placeholder=" img_url..."
