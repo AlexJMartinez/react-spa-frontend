@@ -5,6 +5,14 @@ import { fetchUploads } from '../Actions/fetchUploads'
 import './UploadsContainer.css';
 class UploadsContainer extends Component {
  
+    // Rather than doing a fetch call inside of componentDidMount
+    // I made a dispatch action that returns a function (thunk)
+    // since generally dispatch actions return an object 
+    // (the new state based on the older state of the object)
+
+    // That function uses axios to fetch uploads, assign them to a variable
+    // and use that variable as the payload value in my dispatch action.
+
     componentDidMount() {
         this.props.fetchUploads()
     }
